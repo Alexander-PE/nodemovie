@@ -1,6 +1,7 @@
 import {Router} from "express";
 import {getPelis, createPelis, getById, delMovieById, updtMovie} from "../controllers/pelis.controller";
 
+
 const router = Router();
 
 router.get('/pelis', getPelis);

@@ -5,6 +5,7 @@ export const getPelis = async (req, res) => {
     const pool = await connect()
     const result = await pool.request().query(querys.getAll);
     console.log(result);
+    
     res.json(result.recordset);
 }
 
