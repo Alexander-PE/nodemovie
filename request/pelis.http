@@ -1,0 +1,42 @@
+@api = http://localhost:3000/pelis
+
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "Titulo": "asdfasdfasfd",
+    "Director": "asdfasdfasfd",
+    "Comentario": "asdfasdfasfd",
+    "Actores": "sdfhjashdf",
+    "Year": 2020,
+    "Trailer": "asdfasdfasfd"
+}
+
+###
+
+GET {{api}}/1
+
+
+###
+
+
+DELETE {{api}}/6
+
+###
+
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "Titulo": "asdfasdfasfd",
+    "Director": "asdfasdfasfd",
+    "Comentario": "asdfasdfasfd",
+    "Actores": "asdfasdfasfd",
+    "Year": 2020,
+    "Trailer": "asdfasdfasfd"
+}
